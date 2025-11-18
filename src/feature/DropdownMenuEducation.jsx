@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function DropdownMenuEducation({ open, setOpen, buttonRef }) {
+export default function DropdownMenuEducation({ open, setOpen, buttonRef, asideVisible }) {
   const menuRef = useRef(null);
 
   // Fermer le menu quand on clique en dehors 
@@ -46,8 +46,9 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef }) {
         ref={menuRef}
         role="menu"
         aria-hidden={!open}
-        className={`absolute top-12.5 left-270.5 mt-2 w-52 bg-mirage-950 border rounded shadow-lg transition-all duration-150 ${
-          open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
+        className={`absolute top-12.5 mt-2 w-52 bg-mirage-950 border rounded shadow-lg transition-all duration-150 
+          ${asideVisible ? "left-[267px]" : "left-[249px]"}
+          ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
         }`}
       >
         <div className="py-1">

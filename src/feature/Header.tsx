@@ -4,14 +4,14 @@ import { useState, useRef } from "react";
 import DropdownMenuEducation from "@/feature/DropdownMenuEducation";
 import { Gamepad2, BookOpen, Newspaper, Info } from "lucide-react";
 
-export default function Header() {
+export default function Header({ asideVisible }: { asideVisible: boolean }) {
   const [eduOpen, setEduOpen] = useState(false);
   const [eduHover, setEduHover] = useState(false);
   const eduButtonRef = useRef(null);
 
   return (
     <header className="bg-swiss-coffee-300 flex items-center justify-between pt-3.5 pb-3.5 sm:pl-5 sm:pr-5 md:pl-15 md:pr-15 shadow-sm">{/* sm:px-5 md:px-15*/}
-      <div className="relative group">
+      <header className="relative group">
         <Link href={"/"}>
           <h1 className="text-strikemaster-600 glitch font-black text-lg flex items-center gap-2">
             <span className="relative flex items-center justify-center w-6 h-6 rounded-full bg-strikemaster-600/10">
@@ -23,7 +23,7 @@ export default function Header() {
         <p className="w-full text-center italic absolute top-[70%] left-[58%] transform -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-strikemaster-600 text-xxs sm:text-xs font-medium transition-all duration-300">
           Dites adieu aux erreurs de syntaxe
         </p>
-      </div>
+      </header>
 
       <nav className="flex items-center text-xs sm:text-lg sm:gap-12">
         <Link href={"/jeu"} className="font-medium glitch hover:font-bold flex items-center gap-2">
@@ -53,7 +53,7 @@ export default function Header() {
             </svg>
           </button>
 
-          <DropdownMenuEducation open={eduOpen} setOpen={setEduOpen} buttonRef={eduButtonRef} />
+          <DropdownMenuEducation open={eduOpen} setOpen={setEduOpen} buttonRef={eduButtonRef} asideVisible={asideVisible}/>
         </div>
 
         <Link href={"/actualite"} className="font-medium glitch flex items-center gap-2 transition-all duration-200 hover:[text-shadow:_0_0_0.8px_currentColor]">
