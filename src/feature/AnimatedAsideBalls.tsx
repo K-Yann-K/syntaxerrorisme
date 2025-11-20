@@ -41,7 +41,7 @@ export default function AnimatedAsideBalls({
     const dpr = Math.max(1, window.devicePixelRatio || 1);
 
     const initBalls = (count: number, w: number, h: number) => {
-      // 🔹 On crée les balles directement à l’intérieur du canvas
+      //  On crée les balles directement à l’intérieur du canvas
       ballsRef.current = Array.from({ length: count }, () => {
         const r = 8 + Math.random() * 12;
         return {
@@ -136,9 +136,9 @@ export default function AnimatedAsideBalls({
   return (
     <aside
       className={`relative overflow-hidden bg-strikemaster-600 
-        transition-[padding] duration-600 ease-out
+        transition-[padding] duration-600 ease-out 
         ${animationClass}
-        ${visible ? "p-9" : "p-0"}
+        ${visible ? "p-0 lg:p-9" : "p-0"}
       `}
     >
       <canvas

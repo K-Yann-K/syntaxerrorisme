@@ -14,7 +14,7 @@ export default function IntroductionSection() {
             Ce lieu explore toutes les formes de dérives syntaxiques — programmées ou non.
           </p>
 
-          <p className="mb-10">
+          <p className="mb-10 text-shuttle-gray-800">
             Entre créativité, erreurs assumées, jeux, éducation et actualité, retouvez tout 
             nos éléments en lien ou pour lutter contre le syntaxerrorisme.
           </p>

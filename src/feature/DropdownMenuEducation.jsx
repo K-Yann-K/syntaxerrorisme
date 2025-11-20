@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function DropdownMenuEducation({ open, setOpen, buttonRef, asideVisible }) {
+export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
   const menuRef = useRef(null);
 
   // Fermer le menu quand on clique en dehors 
@@ -12,10 +12,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef, asideV
       const buttonNode = buttonRef?.current;
 
       if (!menuNode) return;
-
-      // si clique à l'intérieur du menu -> ne fait rien
       if (menuNode.contains(target)) return;
-      // si clique sur le bouton -> ne fait rien (le toggle est géré par le bouton)
       if (buttonNode && buttonNode.contains(target)) return;
 
       setOpen(false);
@@ -46,8 +43,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef, asideV
         ref={menuRef}
         role="menu"
         aria-hidden={!open}
-        className={`absolute top-12.5 mt-2 w-52 bg-mirage-950 border rounded shadow-lg transition-all duration-150 
-          ${asideVisible ? "left-[267px]" : "left-[249px]"}
+        className={`absolute top-full left-1/2 -translate-x-5/8 mt-2 w-52 bg-mirage-950 border rounded shadow-lg transition-all duration-150 
           ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
         }`}
       >

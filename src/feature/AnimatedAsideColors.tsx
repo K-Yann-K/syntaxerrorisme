@@ -7,10 +7,10 @@ export default function AnimatedAsideColors({ visible, side = "left" }: { visibl
   const animationClass =
     side === "left"
       ? visible
-        ? "animate-fadeSlideIn-left p-3"
+        ? "animate-fadeSlideIn-left lg:p-3"
         : "animate-fadeSlideOut-left"
       : visible
-        ? "animate-fadeSlideIn-right p-3"
+        ? "animate-fadeSlideIn-right lg:p-3"
         : "animate-fadeSlideOut-right";
 
   useEffect(() => {

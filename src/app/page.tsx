@@ -25,7 +25,26 @@ export default function Home() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  const [isDesktop, setIsDesktop] = useState(true);
+
   useEffect(() => {
+    const checkScreen = () => {
+      setIsDesktop(window.innerWidth >= 768); // 768px = Tailwind md
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) {
+      setShowBalls(false);
+      setShowColors(false);
+      return;
+    }
+
     const handleScroll = () => {
       const startBalls = startBallsRef.current?.getBoundingClientRect();
       const startColors = startColorsRef.current?.getBoundingClientRect();
@@ -35,7 +54,7 @@ export default function Home() {
       if (!startBalls || !startColors || !footer) return;
 
       // Conditions de visibilité relatives à la fenêtre
-      const isPastBallsStart = startBalls.top < vh * 0.8; // on a atteint le paragraphe
+      const isPastBallsStart = startBalls.top < vh * 0.6; // on a atteint le paragraphe
       const isBeforeColors = startColors.top > vh * 0.3;  // LangueFR pas encore visible
       const isColorsVisible = startColors.top < vh * 0.7 && footer.top > vh * 0.3;
       const isFooterVisible = footer.top < vh * 0.9;
@@ -59,7 +78,7 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // init
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isDesktop]);
 
     useEffect(() => {
     if (!sectionRef.current) return;
@@ -80,12 +99,17 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex">
-      <AnimatedAsideBalls visible={showBalls} side="left" />
-      <AnimatedAsideColors visible={showColors} side="left"/>
+    <main className="flex flex-col md:flex-row">
+
+      {isDesktop && (
+        <>
+          <AnimatedAsideBalls visible={showBalls} side="left" />
+          <AnimatedAsideColors visible={showColors} side="left"/>
+        </>
+      )}
       
-      <article className="min-h-screen w-full bg-gray-50 text-gray-800">
-        <Header asideVisible={showBalls || showColors}/>
+      <article className="min-h-screen w-full bg-gray-50 ">
+        <Header/>
          
         <IntroductionSection/>
 
@@ -111,8 +135,12 @@ export default function Home() {
         </footer>
       </article>
 
-      <AnimatedAsideBalls visible={showBalls} side="right"  />
-      <AnimatedAsideColors visible={showColors} side="right" />
+      {isDesktop && (
+        <>
+          <AnimatedAsideBalls visible={showBalls} side="right"  />
+          <AnimatedAsideColors visible={showColors} side="right" />
+        </>
+      )}
     </main>
   );
 }

@@ -29,9 +29,9 @@ const faqData: Question[] = [
       "Absolument. Le syntaxerrorisme transcende le développement. Il s’invite dans les mails, les CV, les campagnes marketing, les slogans et même les conversations Slack. Partout où le langage devient un outil de sens, le syntaxerrorisme apporte sa rigueur et son ironie constructive.",
   },
   {
-    question: "Comment devenir un vrai syntaxerroriste ?",
+    question: "Comment devenir un vrai syntaxeur ?",
     answer:
-      "En cultivant la curiosité et l’humour de celui qui débogue sa pensée. Le vrai syntaxerroriste apprend à observer ses fautes, à en rire et à les transformer. Il pratique la précision sans rigidité, la créativité sans chaos. C’est un état d’esprit, pas un manuel.",
+      "En cultivant la curiosité et l’humour de celui qui débogue sa pensée. Le vrai syntaxeur apprend à observer ses fautes, à en rire et à les transformer. Il pratique la précision sans rigidité, la créativité sans chaos. C’est un état d’esprit, pas un manuel.",
   },
   {
     question: "Le syntaxerrorisme est-il réservé aux rédacteurs techniques ?",
