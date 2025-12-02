@@ -120,6 +120,8 @@ export default function Home() {
         <section ref={sectionRef} className={`bg-strikemaster-200 transition-all duration-700 ${ isVisible ? "p-20" : ""}`}>
           <LangueFRSection  />
         </section>
+        {/* faire une section avec h2:Corriger vos codes informatiques (et programmes?), ça redirige vers le mode dico*/}
+        {/* faire une section avec h2:Apprenez les bonnes pratiques de codeur professionnel, ça redirige vers le glossaire et le quiz d'où 2 h3: (et programmes?)*/}
 
         {/* dans une section mettre dans le bg un icone croix avec "a bats les syntaxerroristes" dans le délire de https://www.belacom.fr/agence-email-marketing/*/}
         <ToolsSection toolsRef={startColorsRef}/>

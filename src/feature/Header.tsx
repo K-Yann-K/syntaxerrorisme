@@ -39,7 +39,7 @@ export default function Header() {
 
           {/* --- DESKTOP NAV --- */}
           <nav className="hidden md:flex text-gray-800 items-center text-lg gap-12">
-              <Link href={"/jeu"} className="font-medium glitch hover:font-bold flex items-center gap-2">
+              <Link href={"/jeu/Quizz/"} className="font-medium glitch hover:font-bold flex items-center gap-2">
                   <Gamepad2 className="w-5 h-5 text-strikemaster-600" />
                   Jeu
               </Link>

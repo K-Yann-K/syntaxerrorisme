@@ -43,7 +43,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
         ref={menuRef}
         role="menu"
         aria-hidden={!open}
-        className={`absolute top-full left-1/2 -translate-x-5/8 mt-2 w-52 bg-mirage-950 border rounded shadow-lg transition-all duration-150 
+        className={`absolute top-full left-1/2 -translate-x-5/8 mt-2 w-52 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
           ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
         }`}
       >

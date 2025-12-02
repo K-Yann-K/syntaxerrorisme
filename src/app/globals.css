@@ -135,6 +135,55 @@
   animation: fadeSlideOut-right 0.6s ease-in forwards;
 }
 
+.quizAside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 45px;
+  opacity: 0;
+  z-index: 10;
+}
+
+/* LEFT Success — avance à 40%, puis revient lentement */
+@keyframes successLeft {
+  0% { transform: translateX(-45px); }
+  35% { transform: translateX(0); }
+  98% { transform: translateX(-15px); }
+  100% { transform: translateX(-45px); }
+}
+
+@keyframes successRight {
+  0% { transform: translateX(45px); }
+  35% { transform: translateX(0); }
+  80% { transform: translateX(0); }
+  100% { transform: translateX(45px); }
+}
+
+/* LEFT Error — mouvement chaotique va-et-vient */
+@keyframes errorLeft {
+  0% { transform: translateX(-45px); }
+  15% { transform: translateX(0); }
+  30% { transform: translateX(-25px); }
+  45% { transform: translateX(-10px); }
+  60% { transform: translateX(-35px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes errorRight {
+  0% { transform: translateX(45px); }
+  15% { transform: translateX(0); }
+  30% { transform: translateX(25px); }
+  45% { transform: translateX(10px); }
+  60% { transform: translateX(35px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-success-left     { animation: successLeft 2s forwards; opacity: 1; }
+.animate-success-right    { animation: successRight 2s forwards; opacity: 1; }
+.animate-error-left       { animation: errorLeft 2s forwards; opacity: 1; }
+.animate-error-right      { animation: errorRight 2s forwards; opacity: 1; }
+
+
 /* --- Clignotement du point d’interrogation --- */
 @keyframes blink {
   0%, 100% {
