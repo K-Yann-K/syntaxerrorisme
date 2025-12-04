@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "@/feature/Header";
 import Footer from "@/feature/Footer";
 import { questions, getRandomQuestion } from "@/app/jeu/Quizz/feature/Questions";

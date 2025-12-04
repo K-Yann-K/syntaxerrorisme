@@ -67,17 +67,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-3 text-white">Nos solutions</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="/jeu" className="hover:text-white transition">
+                <Link href="/jeu/Quizz" className="hover:text-white transition">
                   Jeu interactif
                 </Link>
               </li>
               <li>
-                <Link href="/dico" className="hover:text-white transition">
+                <Link href="/Education/Dictionnaire" className="hover:text-white transition">
                   Mode dico
                 </Link>
               </li>
               <li>
-                <Link href="/cv-lm" className="hover:text-white transition">
+                <Link href="/Education/CV&LM" className="hover:text-white transition">
                   CV & Lettres de motivation
                 </Link>
               </li>

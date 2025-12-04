@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
   const menuRef = useRef(null);
@@ -43,37 +44,27 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
         ref={menuRef}
         role="menu"
         aria-hidden={!open}
-        className={`absolute top-full left-1/2 -translate-x-5/8 mt-2 w-52 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
+        className={`absolute top-full left-1/2 -translate-x-5/8 mt-1 w-52 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
           ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
         }`}
       >
         <div className="py-1">
-          <a
-            href="#cv"
+          <Link href={"/Education/CV&LM"}
             role="menuitem"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-strikemaster-400 hover:bg-white/5 hover:text-strikemaster-600"
           >
             CV et lettre de motivation
-          </a>
+          </Link>
 
-          <a
-            href="#dico"
+          <Link href={"/Education/Dictionnaire"}
             role="menuitem"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-strikemaster-400 hover:bg-white/5 hover:text-strikemaster-600"
           >
             Mode Dico
-          </a>
+          </Link>
 
-          <a
-            href="#accessibilite"
-            role="menuitem"
-            onClick={() => setOpen(false)}
-            className="block px-4 py-2 text-sm text-strikemaster-400 hover:bg-white/5 hover:text-strikemaster-600"
-          >
-            Accessibilité / Handicap
-          </a>
         </div>
       </div>
     </>
