@@ -15,10 +15,13 @@ export const metadata = {
     "c++",
     "java",
     "intelligence artificielle",
-    "linter",
-    
+    "linter"
   ],
   alternates: {
     canonical: "https://syntaxerrorisme-omega.vercel.app/dictionnaire",
   },
 };
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}
