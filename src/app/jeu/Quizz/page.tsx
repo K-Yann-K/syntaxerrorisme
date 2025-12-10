@@ -64,13 +64,13 @@ setTimeout(() => setFlashVisible(false), 2000);
   };
 
   return (
-    <main className="" >
-        <header>
+    <main className="bg-cod-gray-950" >
+        <header className="mb-14">
             <Header />
         </header>
-        <article className="relative overflow-hidden">
+        <article className="relative overflow-hidden ">
             <QuizFeedbackAside visible={flashVisible} success={flashSuccess} side="left" />
-            <section className="max-w-3xl mx-auto px-4 py-12 text-white ">
+            <section className="max-w-3xl mx-auto px-4 pb-12 pt-4 text-white ">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-strikemaster-400">
                     Quiz Syntaxerroriste : Testez vos erreurs !
                 </h1>

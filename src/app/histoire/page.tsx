@@ -7,7 +7,7 @@ export default function HistoirePage() {
   return (
     <main>
       <IntroScreen />
-      <section className="min-h-screen  w-full bg-mirage-950 ">
+      <section className="min-h-screen text-white w-full bg-mirage-950 ">
         <header>
           <Header/>
         </header>

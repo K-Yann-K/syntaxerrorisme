@@ -64,7 +64,14 @@ export default function Footer() {
           
           {/* COLONNE 1 */}
           <article>
-            <h3 className="text-lg font-semibold mb-3 text-white">Nos solutions</h3>
+            <header className="relative group mb-5">
+              <h3 className="text-lg font-semibold mb-3 text-white">
+                Nos solutions
+              </h3>
+              <p className="w-full italic absolute bottom-25/25 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+                Vos Problèmes ?
+              </p>
+            </header>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href="/jeu/Quizz" className="hover:text-white transition">
@@ -73,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/Education/Dictionnaire" className="hover:text-white transition">
-                  Mode dico
+                  Dictionnaire
                 </Link>
               </li>
               <li>
@@ -86,7 +93,12 @@ export default function Footer() {
 
           {/* COLONNE 2 */}
           <article>
-            <h3 className="text-lg font-semibold mb-3 text-white">Nos ressources</h3>
+            <header className="relative group mb-5">
+              <h3 className="text-lg font-semibold mb-3 text-white">Nos ressources</h3>
+              <p className="w-full italic absolute top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+                On parle de tout, dont nous !
+              </p>
+            </header>
             <ul className="space-y-2 text-gray-400">
               <li><Link href="/actualite" className="hover:text-white transition">Actualités</Link></li>
             </ul>
@@ -94,7 +106,12 @@ export default function Footer() {
 
           {/* COLONNE 3 */}
           <article>
-            <h3 className="text-lg font-semibold mb-3 text-white">Le code du syntaxeur</h3>
+            <header className="relative group mb-5">
+              <h3 className="text-lg font-semibold mb-3 text-white">Le code du syntaxeur</h3>
+              <p className="w-full italic absolute top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+                Bien plus effrayant que l&apos;URSSAF
+              </p>
+            </header>
             <ul className="space-y-2 text-gray-400">
               <li><Link href="/histoire" className="hover:text-white transition">Histoire du syntaxerrorisme</Link></li>
               <li><Link href="/mention-legale" className="hover:text-white transition">Mentions légales</Link></li>

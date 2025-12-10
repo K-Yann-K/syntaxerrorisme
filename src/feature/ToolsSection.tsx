@@ -25,22 +25,22 @@ export default function OutilsSyntaxerrorisme({ toolsRef }: ToolsSectionProps)  
       </header>
 
       {/* --- Cartes interactives --- */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <article className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {[
           {
-            href: "/education",
+            href: "/Education/Dictionnaire",
             title: "Éducation & Outils",
             text: `Formez-vous à la langue du code et du travail. 
                    Découvrez nos CV, lettres de motivation et dictionnaire syntaxerroriste.`,
           },
           {
-            href: "/jeux",
+            href: "/jeu/Quizz",
             title: "Jeux & Expériences",
             text: `Jouez avec la grammaire du bug et les erreurs syntaxiques. 
                    Le Syntaxerrorisme est aussi un terrain de jeu créatif.`,
           },
           {
-            href: "/actualité",
+            href: "/actualite",
             title: "Actualités & Humour",
             text: `Restez informé des dernières actualités syntaxiques, memes, et 
                    réflexions absurdes sur notre rapport au langage.`,
@@ -53,7 +53,7 @@ export default function OutilsSyntaxerrorisme({ toolsRef }: ToolsSectionProps)  
               ${i === 1 ? "animate-floating-delayed" : "animate-floating"} hover:animate-none
               hover:scale-105 hover:rounded-r-[3rem]`}
           >
-            <div className="p-10 h-full flex flex-col justify-center items-center text-center">
+            <section className="p-10 h-full flex flex-col justify-center items-center text-center">
               <h3 className="text-2xl font-semibold text-strikemaster-600 transition-all duration-300">
                 {item.title}
               </h3>
@@ -64,10 +64,10 @@ export default function OutilsSyntaxerrorisme({ toolsRef }: ToolsSectionProps)  
               >
                 {item.text}
               </p>
-            </div>
+            </section>
           </a>
         ))}
-      </div>
+      </article>
     </section>
   );
 }

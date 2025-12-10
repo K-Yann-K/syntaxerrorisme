@@ -4,7 +4,7 @@ import Footer from "@/feature/Footer";
 
 export default function PolitiqueConfidentialitePage() {
   return (
-    <main className="min-h-screen bg-mirage-950  ">
+    <main className="min-h-screen bg-mirage-950 text-white/90  ">
         <IntroScreen />
 
         <article className="">

@@ -54,7 +54,17 @@
   --color-shuttle-gray-800: #3f454b;
   --color-shuttle-gray-900: #383d41;
   --color-shuttle-gray-950: #22262a;
-
+  --color-cod-gray-50: #f6f6f6;
+  --color-cod-gray-100: #e7e7e7;
+  --color-cod-gray-200: #d1d1d1;
+  --color-cod-gray-300: #b0b0b0;
+  --color-cod-gray-400: #888888;
+  --color-cod-gray-500: #6d6d6d;
+  --color-cod-gray-600: #5d5d5d;
+  --color-cod-gray-700: #4f4f4f;
+  --color-cod-gray-800: #454545;
+  --color-cod-gray-900: #3d3d3d;
+  --color-cod-gray-950: #0a0a0a;
 
 }
 
@@ -155,7 +165,7 @@
 @keyframes successRight {
   0% { transform: translateX(45px); }
   35% { transform: translateX(0); }
-  80% { transform: translateX(0); }
+  80% { transform: translateX(15px); }
   100% { transform: translateX(45px); }
 }
 
@@ -166,7 +176,8 @@
   30% { transform: translateX(-25px); }
   45% { transform: translateX(-10px); }
   60% { transform: translateX(-35px); }
-  100% { transform: translateX(0); }
+  90% { transform: translateX(0); }
+  100% { transform: translateX(-45px); }
 }
 
 @keyframes errorRight {
@@ -175,7 +186,8 @@
   30% { transform: translateX(25px); }
   45% { transform: translateX(10px); }
   60% { transform: translateX(35px); }
-  100% { transform: translateX(0); }
+  90% { transform: translateX(0); }
+  100% { transform: translateX(45px); }
 }
 
 .animate-success-left     { animation: successLeft 2s forwards; opacity: 1; }
@@ -219,7 +231,7 @@
   white-space: nowrap;
   overflow: hidden;
   animation:
-    typing 3s steps(40, end) forwards,
+    typing 5s steps(40, end) forwards,
     blinks 0.7s step-end infinite;
 }
 

@@ -44,7 +44,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
         ref={menuRef}
         role="menu"
         aria-hidden={!open}
-        className={`absolute top-full left-1/2 -translate-x-5/8 mt-1 w-52 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
+        className={`absolute mt-28 left-1/2 -translate-x-5/8 w-50 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
           ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
         }`}
       >
@@ -62,7 +62,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-strikemaster-400 hover:bg-white/5 hover:text-strikemaster-600"
           >
-            Mode Dico
+            Dictionnaire
           </Link>
 
         </div>

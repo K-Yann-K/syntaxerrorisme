@@ -7,7 +7,7 @@ export default function MentionsLegalesPage() {
     <main>
         <IntroScreen />
 
-        <article className=" bg-mirage-950 ">
+        <article className=" bg-mirage-950 text-white/90  ">
             <header>
                 <Header/>
             </header>

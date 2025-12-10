@@ -3,7 +3,7 @@ import OpenAI from "openai";
 export const runtime = "edge";
 
 const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
+  apiKey: process.env.OPENAI_API_KEY || "",
 });
 
 export async function POST(req: Request) {
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   }
 
   const completion = await client.chat.completions.create({
-    model: "gpt-4.1",
+    model: "gpt-4o-mini",
     stream: true,
     messages: [
       {

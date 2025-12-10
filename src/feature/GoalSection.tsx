@@ -17,7 +17,7 @@ export default function TypingText() {
           observer.unobserve(el); // on ne l’observe plus après le premier déclenchement
         }
       },
-      { threshold: 0.3 } 
+      { threshold: 0.6 } 
     );
 
     observer.observe(el);
