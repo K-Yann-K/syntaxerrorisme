@@ -1,22 +1,25 @@
 import type { MetadataRoute } from "next";
 
+const SITE = "https://syntaxerrorisme-omega.vercel.app";
+const LAST_MOD = "2025-12-16"; // mets la date du dernier déploiement
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://syntaxerrorisme-omega.vercel.app/",
-      lastModified: new Date(),
+      url: `${SITE}/`,
+      lastModified: LAST_MOD,
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://syntaxerrorisme-omega.vercel.app/Education/Dictionnaire",
-      lastModified: new Date(),
+      url: `${SITE}/Education/Dictionnaire`,
+      lastModified: LAST_MOD,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://syntaxerrorisme-omega.vercel.app/jeu/Quizz",
-      lastModified: new Date(),
+      url: `${SITE}/jeu/Quizz`,
+      lastModified: LAST_MOD,
       changeFrequency: "weekly",
       priority: 0.9,
     },
