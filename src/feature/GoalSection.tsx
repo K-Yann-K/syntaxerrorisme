@@ -26,14 +26,14 @@ export default function TypingText() {
 
 
   return (
-    <section className="bg-mirage-950 text-white py-32 overflow-hidden text-center">
-      <p className="text-9xl font-bold">
+    <section className="bg-mirage-950 text-white py-20 md:py-32 overflow-hidden text-center">
+      <p className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-tight">
         Notre objectif <span className="animate-blink">?</span>
       </p>
 
     <p
       ref={ref}
-      className={`text-7xl text-center mt-10 font-light whitespace-nowrap border-r-4 border-strikemaster-400 overflow-hidden
+      className={`text-3xl sm:text-4xl lg:text-6xl xl:text-7xl text-center mt-10 font-light whitespace-nowrap border-r-4 border-strikemaster-400 overflow-hidden
         ${isVisible ? "animate-typing" : "opacity-0"}
       `}
     >

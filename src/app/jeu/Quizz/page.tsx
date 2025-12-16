@@ -65,10 +65,10 @@ setTimeout(() => setFlashVisible(false), 2000);
 
   return (
     <main className="bg-cod-gray-950" >
-        <header className="mb-14">
+        <header className="">
             <Header />
         </header>
-        <article className="relative overflow-hidden ">
+        <article className="relative overflow-hidden pt-14 ">
             <QuizFeedbackAside visible={flashVisible} success={flashSuccess} side="left" />
             <section className="max-w-3xl mx-auto px-4 pb-12 pt-4 text-white ">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-strikemaster-400">

@@ -13,6 +13,10 @@ import ToolsSection from "@/feature/ToolsSection"
 import DefinitionSection from "@/feature/definitionSection";
 import ArticlesSection from "@/feature/ArticleSection";
 import SyntaxerrorismeFAQ from "@/feature/FAQSection";
+import GameSection from "@/feature/GameSection";
+import { BombRain } from "@/feature/BombRain";
+import GameReveal from "@/feature/GameReveal";
+
 
 export default function Home() {
   const startBallsRef = useRef<HTMLSpanElement | null>(null); // début des sphères
@@ -117,7 +121,7 @@ export default function Home() {
         
         <GoalSection />
 
-        <section ref={sectionRef} className={`bg-strikemaster-200 transition-all duration-700 ${ isVisible ? "p-20" : ""}`}>
+        <section ref={sectionRef} className={`bg-strikemaster-200 transition-all duration-700 ${ isVisible ? " p-2 sm:p-10 md:p-20" : ""}`}>
           <LangueFRSection  />
         </section>
         {/* faire une section avec h2:Corriger vos codes informatiques (et programmes?), ça redirige vers le mode dico*/}
@@ -127,6 +131,11 @@ export default function Home() {
         <ToolsSection toolsRef={startColorsRef}/>
 
         <DefinitionSection />
+
+        <div className="relative isolate overflow-hidden bg-strikemaster-200 border-t border-b border-swiss-coffee-100 py-10">
+          <BombRain count={11} />
+          <GameSection />
+        </div>
 
         <SyntaxerrorismeFAQ />
 

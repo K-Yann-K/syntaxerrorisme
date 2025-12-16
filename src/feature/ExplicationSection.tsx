@@ -16,10 +16,10 @@ export default function ExplicationSection({ startBallsRef }: ExplicationSection
           <p className="text-gray-600 text-lg leading-relaxed mb-10">
             Le <b>syntaxerrorisme</b> est le concept dédié aux erreurs syntaxiques mêlant <em>bug</em>, <em>langage</em>, 
             <em>créativité</em>, <em>détournement</em> et <em>absurdité constructive</em>. Nous nous dévouons à corriger vos erreurs de programmation et vous apprendre des astuces afin que vous ne les reproduisez plus.
-            <br/> <span  className="text-black">Devenez le parfait bon développeurs en Javascript ( js ), Python, React, et bien d&apos;autres gràce à nous !</span>
+            <br/> <span  className="text-black">Devenez le parfait bon développeur en Javascript ( js ), Python, React, et bien d&apos;autres gràce à nous !</span>
           </p>
           <p className="mb-10 text-gray-600">
-            Les fautes de gramaire, de syntaxe voir même de conjugaison
+            Les fautes de grammaire, de syntaxe voir même de conjugaison
             sont des éléments traités par ce site. Les erreurs non-conformes à un code corporate, de mauvais goût y sont comprises 
             Le syntaxerrorisme : <span className="font-semibold">une philosophie qui transforme l’erreur en moteur de réflexion et de style</span>.
           </p>

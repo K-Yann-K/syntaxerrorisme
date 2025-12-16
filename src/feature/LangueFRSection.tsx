@@ -33,7 +33,7 @@ export default function LangueFRSection() {
       `}
       aria-labelledby="syntaxerrorisme-langue"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center p-8 sm:p-12 md:p-16">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-10 items-center p-8 sm:p-12 md:p-16">
         <aside className="relative w-full h-80 md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/photo_ecriture.webp"
@@ -46,7 +46,6 @@ export default function LangueFRSection() {
 
         <article className="md:col-span-2 space-y-6">
           <h2
-            
             id="syntaxerrorisme-langue"
             className="text-4xl md:text-5xl font-extrabold text-strikemaster-600 leading-tight"
           >

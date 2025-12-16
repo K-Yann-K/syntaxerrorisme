@@ -68,7 +68,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-3 text-white">
                 Nos solutions
               </h3>
-              <p className="w-full italic absolute bottom-25/25 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+              <p className="w-full italic absolute hidden md:block bottom-25/25 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
                 Vos Problèmes ?
               </p>
             </header>
@@ -95,8 +95,8 @@ export default function Footer() {
           <article>
             <header className="relative group mb-5">
               <h3 className="text-lg font-semibold mb-3 text-white">Nos ressources</h3>
-              <p className="w-full italic absolute top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
-                On parle de tout, dont nous !
+              <p className="w-full italic absolute hidden md:block top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+                On parle de tout, même nous !
               </p>
             </header>
             <ul className="space-y-2 text-gray-400">
@@ -108,7 +108,7 @@ export default function Footer() {
           <article>
             <header className="relative group mb-5">
               <h3 className="text-lg font-semibold mb-3 text-white">Le code du syntaxeur</h3>
-              <p className="w-full italic absolute top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
+              <p className="w-full italic absolute hidden md:block top-7/10 left-1/2 transform -translate-x-1/2 text-strikemaster-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 text-xxs sm:text-xs transition-all duration-300">
                 Bien plus effrayant que l&apos;URSSAF
               </p>
             </header>
