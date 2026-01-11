@@ -26,7 +26,7 @@ export default function ArticlesSection() {
 
         <Link
           href="/actualite"
-          className="inline-block mt-6 bg-strikemaster-500 hover:bg-strikemaster-400 text-white font-semibold text-lg px-8 py-3 rounded-2xl shadow-md transition-all duration-300 hover:scale-105 focus:ring-4 focus:ring-strikemaster-300 focus:outline-none"
+          className="inline-block mt-6 bg-strikemaster-700 hover:bg-strikemaster-400 text-white hover:text-strikemaster-700 font-semibold text-lg px-8 py-3 rounded-2xl shadow-md transition-all duration-300 hover:scale-105 focus:ring-4 focus:ring-strikemaster-300 focus:outline-none"
         >
           Lire les actualités
         </Link>

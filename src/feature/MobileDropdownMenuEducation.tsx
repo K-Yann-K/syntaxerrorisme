@@ -11,7 +11,7 @@ interface MobileMenuProps {
 export default function MobileDropdownMenuEducation({ open, setOpen }: MobileMenuProps) {
 
   return (
-    <nav
+    <nav id="mobile-nav"
       className={`md:hidden overflow-hidden transition-all duration-300 bg-swiss-coffee-200 
         ${open ? "max-h-96 py-4" : "max-h-0 py-0"}`}
     >

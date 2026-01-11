@@ -21,7 +21,7 @@ export default function Header() {
                 <Link href={"/"}>
                     <h1 className="text-strikemaster-600 glitch font-black text-lg flex items-center gap-2">
                         <aside className="relative flex items-center justify-center w-6 h-6 rounded-full bg-strikemaster-600/10">
-                            <span className="absolute w-2 h-2 bg-strikemaster-600 rounded-full animate-pulse"></span>
+                            <span className="absolute w-2 h-2 bg-strikemaster-700 rounded-full animate-pulse"></span>
                         </aside>
                         Syntaxerrorisme
                     </h1>
@@ -33,8 +33,15 @@ export default function Header() {
             </header>
 
             {/* --- BURGER MOBILE --- */}
-            <button className="md:hidden text-strikemaster-700 " onClick={() => setMenuOpen((v) => !v)}>
-                {menuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            <button
+            type="button"
+            className="md:hidden text-strikemaster-700"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
+            >
+            {menuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
 
             {/* --- DESKTOP NAV --- */}
@@ -53,7 +60,7 @@ export default function Header() {
                     aria-haspopup="menu"
                     onMouseEnter={() => setEduHover(true)}
                     onMouseLeave={() => setEduHover(false)}
-                    className={`flex items-center animate-glitch gap-2 py-2 px-1 font-medium transition-all duration-200 text-strikemaster-600 
+                    className={`flex items-center animate-glitch gap-2 py-2 px-1 font-medium transition-all duration-200 text-strikemaster-800 
                         ${eduOpen ? "[text-shadow:_0_0_1.5px_currentColor]" : "hover:[text-shadow:_0_0_1.5px_currentColor]"}`}
                     >
                     <BookOpen className="w-5 h-5" />

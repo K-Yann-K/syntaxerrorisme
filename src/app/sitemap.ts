@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const SITE = "https://syntaxerrorisme-omega.vercel.app";
-const LAST_MOD = "2025-12-16"; // mets la date du dernier déploiement
+const LAST_MOD = "2026-01-11"; 
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

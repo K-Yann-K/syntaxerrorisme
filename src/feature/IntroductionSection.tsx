@@ -1,6 +1,6 @@
 export default function IntroductionSection() {
     return (
-        <section className="py-20 px-6 text-center">
+        <section className="py-20 px-6 text-center bg-gray-50">
           <header className="text-gray-900 font-bold mb-10">
             <h1 className="text-4xl md:text-6xl mb-1 font-bold text-strikemaster-400">
               Syntaxerrorisme <span className="text-gray-900">: </span>

@@ -45,7 +45,7 @@ export default function DropdownMenuEducation({ open, setOpen, buttonRef}) {
         role="menu"
         aria-hidden={!open}
         className={`absolute mt-28 left-1/2 -translate-x-5/8 w-50 bg-shuttle-gray-950 border rounded shadow-lg transition-all duration-150 
-          ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "opacity-0 scale-95 pointer-events-none -translate-y-1"
+          ${ open ? "opacity-100 scale-100 pointer-events-auto translate-y-0" : "hidden"
         }`}
       >
         <div className="py-1">

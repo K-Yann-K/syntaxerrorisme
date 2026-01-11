@@ -128,15 +128,18 @@ export default function Footer() {
       <aside className="mt-12 flex justify-center">
         <button
           onClick={() => { setShow404(true); setDisplayedLines([]); }}
+          aria-label="Afficher le message secret 404"
+          aria-expanded={show404}
+          aria-controls="secret-404"
           className="relative flex items-center justify-center w-10 h-10 rounded-full bg-strikemaster-600/10 hover:bg-strikemaster-600/20 transition-all"
         >
-          <span className="absolute w-2 h-2 bg-strikemaster-600 rounded-full animate-pulse" />
+          <span aria-hidden="true" className="absolute w-2 h-2 bg-strikemaster-600 rounded-full animate-pulse" />
         </button>
       </aside>
 
       {/* --- ASCII 404 --- */}
       {show404 && (
-        <div className="mt-6 font-mono text-strikemaster-600 leading-tight whitespace-pre text-lg sm:text-2xl text-center overflow-x-auto">
+        <div id="secret-404" className="mt-6 font-mono text-strikemaster-600 leading-tight whitespace-pre text-lg sm:text-2xl text-center overflow-x-auto">
           {displayedLines.map((line, index) => (
             <p
               key={index}
@@ -149,7 +152,7 @@ export default function Footer() {
         </div>
       )}
 
-      <footer className="mt-10 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
+      <footer className="mt-10 text-center text-gray-300 text-sm border-t border-gray-700 pt-6">
         <p>&copy; {new Date().getFullYear()} Syntaxerrorisme — Tous droits réservés</p>
       </footer>
 

@@ -15,7 +15,9 @@ import ArticlesSection from "@/feature/ArticleSection";
 import SyntaxerrorismeFAQ from "@/feature/FAQSection";
 import GameSection from "@/feature/GameSection";
 import { BombRain } from "@/feature/BombRain";
-import GameReveal from "@/feature/GameReveal";
+
+import HomeClientFXLeft from "@/feature/HomeClientFXLeft";
+import HomeClientFXRight from "@/feature/HomeCLientFXRight";
 
 
 export default function Home() {
@@ -112,7 +114,7 @@ export default function Home() {
         </>
       )}
       
-      <article className="min-h-screen w-full bg-gray-50 ">
+      <article className="min-h-screen w-full  ">
         <Header/>
          
         <IntroductionSection/>
@@ -141,7 +143,7 @@ export default function Home() {
 
         <ArticlesSection />
 
-        <footer ref={footerRef}>
+        <footer id="fx-footer" ref={footerRef}>
           <Footer />
         </footer>
       </article>

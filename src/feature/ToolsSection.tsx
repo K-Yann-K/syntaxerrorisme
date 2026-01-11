@@ -13,18 +13,17 @@ export default function OutilsSyntaxerrorisme({ toolsRef }: ToolsSectionProps)  
       id="explorer"
       className="relative bg-gray-50 py-24 px-6 text-center overflow-hidden"
     >
-      {/* --- Introduction SEO-friendly --- */}
       <header className="max-w-3xl mx-auto mb-16">
-        <h2 ref={toolsRef} className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <h2 ref={toolsRef} id="fx-start-colors" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Les outils du <span className="text-strikemaster-600">Syntaxerrorisme</span>
         </h2>
+
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-          Découvrez les trois piliers fondamentaux du <strong>Syntaxerrorisme</strong> : 
-          apprendre, expérimenter et rire de nos erreurs de code et de langage. 
+          Découvrez les trois piliers fondamentaux du <strong>Syntaxerrorisme</strong> :
+          apprendre, expérimenter et rire de nos erreurs de code et de langage.
         </p>
       </header>
 
-      {/* --- Cartes interactives --- */}
       <article className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {[
           {
@@ -58,10 +57,7 @@ export default function OutilsSyntaxerrorisme({ toolsRef }: ToolsSectionProps)  
                 {item.title}
               </h3>
 
-              {/* Texte caché par défaut */}
-              <p
-                className="text-gray-600 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 mt-4 max-w-xs"
-              >
+              <p className="text-gray-600 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 mt-4 max-w-xs">
                 {item.text}
               </p>
             </section>
