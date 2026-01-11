@@ -35,7 +35,7 @@ export default function Header() {
             {/* --- BURGER MOBILE --- */}
             <button
             type="button"
-            className="md:hidden text-strikemaster-800"
+            className="md:hidden text-strikemaster-990"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={menuOpen}
