@@ -19,7 +19,10 @@ export default function Header() {
             
             <header className="relative group">
                 <Link href={"/"}>
-                    <h1 className="text-strikemaster-700 glitch font-black text-lg flex items-center gap-2">
+                    <h1 className="text-strikemaster-990  text-shadow-2xs glitch font-black text-lg flex items-center gap-2">
+                        <aside className="relative flex items-center justify-center w-6 h-6 rounded-full bg-strikemaster-900/10">
+                            <span className="absolute w-2 h-2 bg-strikemaster-800 rounded-full animate-pulse"></span>
+                        </aside>
                         Syntaxerrorisme
                     </h1>
                 </Link>
