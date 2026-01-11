@@ -2,19 +2,19 @@ export default function IntroductionSection() {
     return (
         <section className="py-20 px-6 text-center bg-gray-50">
           <header className="text-gray-900 font-bold mb-10">
-            <h1 className="text-4xl md:text-6xl mb-1 font-bold text-strikemaster-400">
+            <h1 className="text-4xl md:text-6xl mb-1 font-bold text-strikemaster-500">
               Syntaxerrorisme <span className="text-gray-900">: </span>
             </h1>
             <h2 className="text-4xl md:text-5xl">le mouvement des esprits qui bugguent avec style</h2>
           </header>
 
-          <p className="mt-6 mb-6 max-w-2xl mx-auto text-lg text-shuttle-gray-600">
+          <p className="mt-6 mb-6 max-w-2xl mx-auto text-lg text-shuttle-gray-800">
             Bienvenue sur le site de référence du syntaxerrorisme. Il regroupe un ensemble d&apos;outils 
             vous permettant de corriger, réduire vos erreures de syntaxes en améliorant votre pensée.
             Ce lieu explore toutes les formes de dérives syntaxiques — programmées ou non.
           </p>
 
-          <p className="mb-10 text-shuttle-gray-800">
+          <p className="mb-10 text-shuttle-gray-900">
             Entre créativité, erreurs assumées, jeux, éducation et actualité, retouvez tout 
             nos éléments en lien ou pour lutter contre le syntaxerrorisme.
           </p>

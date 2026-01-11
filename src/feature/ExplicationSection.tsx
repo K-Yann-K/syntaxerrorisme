@@ -11,7 +11,7 @@ export default function ExplicationSection({ startBallsRef }: ExplicationSection
         <section className="px-6 pb-20 text-center max-w-3xl mx-auto bg-gray-50">
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Qu’est-ce que le <span id="fx-start-balls" ref={startBallsRef} className="text-strikemaster-400">Syntaxerrorisme</span> ?
+            Qu’est-ce que le <span id="fx-start-balls" ref={startBallsRef} className="text-strikemaster-500">Syntaxerrorisme</span> ?
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-10">
