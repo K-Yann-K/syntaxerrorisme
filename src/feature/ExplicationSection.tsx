@@ -23,15 +23,15 @@ export default function ExplicationSection({ startBallsRef }: ExplicationSection
             </p>
           </section>
 
-          <ul className="text-gray-600 mt-5 mb-5">
-            <li>en programmation : erreurs de syntaxe et de logique</li>
-            <li>en écriture : ponctuation, clarté et structure</li>
-            <li>en communication : précision et intention</li>
+          <ul className="text-gray-600 mt-5 mb-5  flex align-center list-disc list-inside leading-relaxed">
+            <li><span className="font-bold text-strikemaster-700">en programmation</span> : erreurs de syntaxe et de logique</li>
+            <li><span className="font-bold text-strikemaster-700">en écriture</span> : ponctuation, clarté et structure</li>
+            <li><span className="font-bold text-strikemaster-700">en communication</span> : précision et intention</li>
           </ul>
 
 
           <p className="text-gray-600 text-lg leading-relaxed mb-10">
-              Le <b>syntaxerrorisme</b>, le concept dédié aux erreurs syntaxiques mêlant <em>bug</em>, <em>langage</em>, 
+              C&apos;est le concept dédié aux erreurs syntaxiques mêlant <em>bug</em>, <em>langage</em>, 
               <em>créativité</em>, <em>détournement</em> et <em>absurdité constructive</em>. Nous nous dévouons à corriger vos erreurs de programmation et vous apprendre des astuces afin que vous ne les reproduisez plus.
           </p>
 

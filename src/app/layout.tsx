@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Syntaxerrorisme",
+  title: "Syntaxerrorisme - La méthode d'analyse des erreurs de syntaxe",
   description: "Deviens un maître du code avec la méthode syntaxerrorisme, l'outil qui corrige l'esprit et les erreurs syntaxiques",
   icons: {
     icon: "/favicon.svg",
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
